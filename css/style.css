@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-size-adjust: 100%;
+    --primary-color: rgb(175, 35, 35);
+    --secondary-color: black;
+}
+
+body{
+    display: block;
+    
+}
+
+img{
+    width: 50%;
+    
+}
+
+.container{
+    background-image: url("/assets/pngegg.png");
+    background-size: 600px;
+    background-attachment: fixed;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100vh;
+    align-items: center;
+}
+    
+.grid-itens{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-top: 3rem;
+    justify-content: space-around;
+
+}
+.grid-itens .itens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: go-back 1s infinite alternate;
+}
+
+
+.bg-secondary{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.align-center{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mb{
+    margin-bottom: auto;
+    padding: 1rem;
+}
+
+
+.align-center .itens{
+    background-color: #404040d6;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+@media (max-width: 720px) {
+    h4{
+        font-size: 1.4rem;
+    }
+
+    .align-center{
+        width: auto;
+    }
+
+    .itens{
+        width: 50%;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .grid-itens{
+        flex-direction: column;
+        
+    }
+    .grid-itens .itens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col{
+        width: 75%;
+        margin: 0;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .icons{
+        width: 100%;
+    }
+
+    img{
+        width: 50%;
+    }
+    .rounded{
+        width: 35%;
+    }
+    .mb{
+        margin-bottom: 0.5rem;
+    }
+    
+
+    
+}
+
+
+
